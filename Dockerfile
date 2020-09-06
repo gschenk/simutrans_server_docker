@@ -12,6 +12,14 @@ ENV SIMUTRANSSRC=$simutranssrc_arg
 RUN  apk add --no-cache \
   git
   patch
+  make
+  pkgconfig
+  gcc
+  g++
+  zlib-dev
+  zstd-dev
+  bzip2-dev
+  miniupnpc-dev
 
 # copy files for build
 COPY build /
