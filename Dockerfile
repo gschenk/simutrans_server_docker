@@ -11,6 +11,7 @@ ENV SIMUTRANSSRC=$simutranssrc_arg
 # install dependencies
 RUN  apk add --no-cache \
   git
+  patch
 
 # copy files for build
 COPY build /
